@@ -1,3 +1,6 @@
+## This branch is created to provide python 3 functionality for games module.
+## Basically just ran 2to3 on source files, plus some minor tweaks.
+
 nflgame is an API to retrieve and read NFL Game Center JSON data.
 It can work with real-time data, which can be used for fantasy football.
 
