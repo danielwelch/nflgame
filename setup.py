@@ -1,5 +1,6 @@
 import codecs
-from distutils.core import setup
+# from distutils.core import setup
+from setuptools import setup
 from glob import glob
 import os.path as path
 
@@ -34,16 +35,16 @@ with codecs.open(path.join(cwd, 'nflgame/version.py'), 'r', 'ascii') as f:
 assert version != '0.0.0'
 
 setup(
-    name='nflgame',
-    author='Andrew Gallant',
-    author_email='andrew@burntsushi.net',
+    name='nflgame3',
+    author='Daniel Welch',
+    author_email='dwelch2102@gmail.com',
     version=version,
     license='UNLICENSE',
     description='An API to retrieve and read NFL Game Center JSON data. '
                 'It can work with real-time data, which can be used for '
-                'fantasy football.',
+                'fantasy football. python 3 compatability branch',
     long_description=longdesc,
-    url='https://github.com/BurntSushi/nflgame',
+    url='https://github.com/danielwelch/nflgame',
     classifiers=[
         'License :: Public Domain',
         'Development Status :: 5 - Production/Stable',
@@ -52,8 +53,8 @@ setup(
         'Intended Audience :: End Users/Desktop',
         'Intended Audience :: Other Audience',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
         'Topic :: Database',
     ],
     platforms='ANY',
